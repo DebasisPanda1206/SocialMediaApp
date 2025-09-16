@@ -1,0 +1,35 @@
+.posts_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 5px;
+    width: 80%;
+}
+
+.grid_item {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.grid_item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:600px) {
+    .posts_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+        gap: 2.5px;
+        width: 90%;
+    }
+}
+
+@media (max-width:350px) {
+    .posts_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+        gap: 2.5px;
+        width: 90%;
+    }
+}

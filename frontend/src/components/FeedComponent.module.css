@@ -1,0 +1,99 @@
+.feed_container {
+    width: 60%;
+    margin: 0 1.5%;
+    margin-top: 5%;
+    color: white;
+}
+
+.post_box {
+    margin: 10% 0;
+}
+
+.upper_banner {
+    display: flex;
+    margin-top: 2%;
+    color: white;
+}
+
+.profile_pic img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post_head {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5%;
+}
+
+.post_head h3 {
+    margin: 0;
+}
+
+.post_head p {
+    margin: 5px 0;
+}
+
+.post_picture {
+    width: 100%;
+}
+
+.post_picture img {
+    width: 100%;
+    max-height: 500px;
+}
+
+.insights_banner {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-top: 5px;
+}
+
+.content_banner span {
+    font-weight: bold;
+}
+
+.content_banner> :last-child {
+    opacity: 1;
+    color: gray;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .feed_container {
+        width: 90%;
+    }
+
+    .post_head {
+        align-items: flex-start;
+    }
+
+    .content_banner {
+        text-align: left;
+    }
+}
+
+@media (max-width:390px) {
+    .profile_pic img {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .post_head {
+        font-size: small;
+        margin: 0 1em;
+    }
+
+    .content_banner {
+        font-size: smaller;
+    }
+
+    .content_banner>:first-child {
+        margin-bottom: auto;
+    }
+}

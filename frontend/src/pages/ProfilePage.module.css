@@ -1,0 +1,30 @@
+.profile_page_container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control_container {
+    border-top: 0.1em solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.5);
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.25em 0;
+}
+
+.control_box img {
+    height: 30px;
+}
+
+@media (max-width:390px) {
+    .control_container {
+        width: 90%;
+        margin: 0.5em 0;
+    }
+
+    .control_box img {
+        height: 27.75px;
+    }
+}

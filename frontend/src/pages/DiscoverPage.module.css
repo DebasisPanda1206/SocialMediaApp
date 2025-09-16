@@ -1,0 +1,84 @@
+.discover_page_container {
+    color: white;
+    background-color: black;
+    padding-left: 5%;
+}
+
+.search_bar {
+    display: flex;
+    gap: 7.25px;
+    background-color: rgba(255, 255, 255, 0.55);
+    width: 55%;
+    padding: 0.5% 1.5%;
+    border-radius: 9999px;
+    margin-bottom: 2.5%;
+}
+
+.search_bar div {
+    display: flex;
+    align-items: center;
+}
+
+.search_bar div img {
+    height: 23px;
+}
+
+.search_bar input {
+    background-color: transparent;
+    margin: 0;
+    border-style: none;
+    flex: 1;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#cross_logo {
+    height: 17.5px;
+    justify-self: flex-end;
+}
+
+/*Suggestion section*/
+.suggest_container {
+    width: 55%;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0.5% 1.5%;
+}
+
+.suggest_component {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.suggest_container::-webkit-scrollbar {
+    display: none;
+}
+
+.suggest_component::-webkit-scrollbar {
+    display: none;
+}
+
+.userbox {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    padding: 1.25%;
+}
+
+.userbox div img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user_detail p {
+    margin: 5% 0%;
+}

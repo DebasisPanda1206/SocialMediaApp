@@ -1,0 +1,90 @@
+.right-container {
+    flex: 1;
+    background-color: rgb(253, 223, 196);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-container h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    padding: 0 15.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 5.5px 2.5px;
+}
+
+form button {
+    color: white;
+    background-color: rgb(33, 33, 254);
+    border-style: none;
+    padding: 5.5px 0;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.hr-text {
+    position: relative;
+    text-align: center;
+    margin: 20px 12.5%
+}
+
+.hr-text hr {
+    border: none;
+    border-top: 1px solid #a9a7a7;
+}
+
+.hr-text span {
+    position: absolute;
+    color: #a3a1a1;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(253, 223, 196);
+    padding: 0 10px;
+}
+
+.secondary-button {
+    margin: 0 20%;
+    background-color: #0A1F44;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: 5px solid #0A1F44;
+    border-radius: 4px;
+}
+
+.secondary-button img {
+    padding: 3px;
+    padding-right: 5px;
+    width: 5px;
+    flex: 0.75;
+}
+
+.secondary-button p {
+    flex: 3.5;
+    margin: 0;
+    height: 100%;
+    background-color: #0A1F44;
+    align-content: center;
+}
+
+button:hover {
+    transform: scale(1.025);
+}
+
+.open-registraion-prompt {
+    color: #959494;
+}
+
+.open-registraion-prompt span {
+    color: blue;
+    cursor: pointer;
+}

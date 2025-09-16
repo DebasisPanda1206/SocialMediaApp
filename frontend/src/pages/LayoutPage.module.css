@@ -1,0 +1,39 @@
+.layoutcontainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    /* no scroll on parent */
+}
+
+.layoutcontainer> :first-child {
+    flex-shrink: 0;
+    width: fit-content;
+    height: 100vh;
+    overflow-y: auto;
+    /* Sidebar can scroll independently */
+}
+
+.layoutcontainer> :last-child {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+    /* Only Outlet scrolls */
+    overflow-x: hidden;
+}
+
+.layoutcontainer> :last-child::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 390px) {
+    .layoutcontainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .layoutcontainer> :first-child {
+        width: 100vw;
+        height: auto;
+        overflow-y: hidden;
+    }
+}

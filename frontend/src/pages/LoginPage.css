@@ -1,0 +1,28 @@
+.outerContainer {
+    height: 100vh;
+    min-height: 0;
+    background-image: url("../../public/static/pexels-rovenimages-com-344613-949587.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25% 0;
+}
+
+.container {
+    display: flex;
+    width: 70vw;
+    height: 85%;
+    box-shadow: 10px 10px 20px black;
+}
+
+@media (max-width:600px) {
+    .container {
+        display: block;
+        width: 85vw;
+        height: fit-content;
+        box-shadow: 5.5px 5.5px 15.5px black;
+    }
+}
