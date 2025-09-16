@@ -22,13 +22,10 @@ const LoginPage = ({ checkLogin }) => {
 
     const sendLoginInfoToBackend = async (loginData) => {
         try {
-            const response = await axios.post("http://localhost:5000/api/login", loginData);
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/login`, loginData);
             console.log('Login successful:', response.data)
-            console.log(response.data.login)
             let x = Boolean(response.data.login);
-            console.log(typeof (x))
             setIsLogged(Boolean(response.data.login))
-            console.log(Logged)
             navigate("/")
         } catch (error) {
             console.log('Login failed:', error.response?.data || error.message)
