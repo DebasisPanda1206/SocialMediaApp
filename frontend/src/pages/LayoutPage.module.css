@@ -23,6 +23,7 @@
 
 .layoutcontainer> :last-child::-webkit-scrollbar {
     display: none;
+    height: 100%;
 }
 
 @media (max-width: 390px) {
@@ -33,7 +34,15 @@
 
     .layoutcontainer> :first-child {
         width: 100vw;
-        height: auto;
+        height: fit-content;
         overflow-y: hidden;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+
+    .layoutcontainer> :last-child {
+        height: auto;
+        padding-bottom: 50px;
     }
 }

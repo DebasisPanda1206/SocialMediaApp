@@ -1,10 +1,12 @@
 import express from "express"
 import cors from "cors"
+import dotenv from 'dotenv'
 
 const app = express()
-
+dotenv.config();
 app.use(cors({ origin: process.env.CORS_ORIGIN }))
 app.use(express.json())
+
 
 app.post('/api/login', (req, res) => {
     const { email, password } = req.body;
@@ -15,7 +17,7 @@ app.post('/api/login', (req, res) => {
     }
 });
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
     console.log("App is listening on port 5000");
 })
