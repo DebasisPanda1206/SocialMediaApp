@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 
 const app = express()
 dotenv.config();
-app.use(cors({ origin: process.env.CORS_ORIGIN }))
+app.use(cors())
 app.use(express.json())
 
 

@@ -43,6 +43,6 @@
 
     .layoutcontainer> :last-child {
         height: auto;
-        padding-bottom: 50pt;
+        padding-bottom: 55pt;
     }
 }

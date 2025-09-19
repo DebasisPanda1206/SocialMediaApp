@@ -44,28 +44,25 @@ input:focus {
 .suggest_container {
     width: 55%;
     height: 400px;
-    overflow-x: hidden;
     overflow-y: auto;
     padding: 0.5% 1.5%;
+    scroll-behavior: smooth;
 }
 
 .suggest_component {
-    overflow-y: auto;
-    scroll-behavior: smooth;
+    width: 100%;
 }
 
 .suggest_container::-webkit-scrollbar {
     display: none;
 }
 
-.suggest_component::-webkit-scrollbar {
-    display: none;
-}
+
+
 
 .userbox {
     width: 100%;
     margin: 0;
-    background-color: rgb(26, 26, 26);
     display: flex;
     gap: 2%;
     align-items: center;
@@ -81,4 +78,38 @@ input:focus {
 
 .user_detail p {
     margin: 5% 0%;
+}
+
+@media(max-width:390px) {
+    .discover_page_container {
+        padding: auto;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    .search_bar {
+        width: 90%;
+    }
+
+    .search_bar div img {
+        height: 20px;
+    }
+
+    #cross_logo {
+        height: 15px;
+    }
+
+    /*suggestion section*/
+
+    .suggest_container {
+        width: 80%;
+        height: 71vh;
+    }
+
+    .userbox div img {
+        height: 45px;
+        width: 45px;
+    }
 }
